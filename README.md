@@ -46,7 +46,7 @@ Maven 是一款为 Java 项目构建管理、依赖管理的工具（**软件**�
 
     Maven 可以管理项目的编译、测试、打包、部署等构建过程。通过实现标准的构建生命周期，Maven 可以确保每一个构建过程都遵循同样的规则和最佳实践。同时，Maven 的插件机制也使得开发者可以对构建过程进行扩展和定制。主动触发构建，只需要简单的命令操作即可。
 
-    ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage.png)
+    ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage.png)
 
 ### 1.3 Maven的安装和配置
 
@@ -64,14 +64,14 @@ Maven 是一款为 Java 项目构建管理、依赖管理的工具（**软件**�
 
     软件结构：
 
-      ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-1.png)
+      ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-1.png)
 2. **环境变量**
 
     环境变量：配置maven_home 和 path
 
-    ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-2.png)
+    ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-2.png)
 
-    ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-3.png)
+    ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-3.png)
 3. **命令测试**
 
 ```Bash
@@ -137,7 +137,7 @@ mvn -v
     
     **注意**：如果本地仓库地址不变化，只有一个原因，就是maven/conf/settings.xml配置文件编写错误！仔细检查即可！
 
-    ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-1740829144373-3.png)
+    ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-1740829144373-3.png)
 
 ## 二、基于IDEA的Maven工程创建
 
@@ -189,7 +189,7 @@ packaging 属性为 pom，代表不会打包，用来做继承的父工程。
 
 - [ ] 建议增加图片（因为我是基于IDEA2024的）
 
-<img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-4.png" style="zoom: 80%;" />
+<img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-4.png" style="zoom: 80%;" />
 
 ### 2.3 IDEA构建Maven JavaEE工程
 
@@ -200,7 +200,7 @@ packaging 属性为 pom，代表不会打包，用来做继承的父工程。
     
         注意：结构和命名固定
     
-        ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-5.png)
+        ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-5.png)
     3. 修改`pom.xml`文件打包方式
     
         修改位置：项目下`/pom.xml`
@@ -214,9 +214,9 @@ packaging 属性为 pom，代表不会打包，用来做继承的父工程。
     ```
     4. 刷新和校验
     
-        ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-6.png)
+        ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-6.png)
     
-        ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-7.png)
+        ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-7.png)
     
         项目的webapp文件夹出现小蓝点，代表成功！！
 2. **插件方式创建（推荐）**
@@ -225,11 +225,11 @@ packaging 属性为 pom，代表不会打包，用来做继承的父工程。
     
         `file / settings / plugins / marketplace`
     
-        ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-8.png)
+        ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-8.png)
     2. 创建一个javasemaven工程
     3. 右键、使用插件快速补全web项目
     
-        ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-9.png)
+        ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-9.png)
     
 ### 2.4 Maven工程项目结构说明
 
@@ -373,11 +373,11 @@ Maven 依赖管理是 Maven 软件中最重要的功能之一。Maven 的依赖�
 
   项目中，需要导入jackson相关的依赖，通过之前导入经验，jackson需要导入三个依赖，分别为：
 
-  ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-10.png)
+  ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-10.png)
 
   通过查看网站介绍的依赖传递特性：data-bind中，依赖其他两个依赖（jackson-annotations、jackson-core）
 
-![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-11.png)
+![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-11.png)
 
   最佳导入：直接导入data-bind，自动依赖传递需要的依赖
 
@@ -456,7 +456,7 @@ pom声明：
 
 文件位置：
 
-![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-12.png)
+![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-12.png)
 
 脚本使用：
 
@@ -473,7 +473,7 @@ pom声明：
 
 项目构建是指将源代码、依赖库和资源文件等转换成可执行或可部署的应用程序的过程，在这个过程中包括编译源代码、链接依赖库、打包和部署等多个步骤。
 
-![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage.png)
+![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage.png)
 
 **主动触发场景：**
 
@@ -498,7 +498,7 @@ pom声明：
 
 **可视化方式构建:**
 
-![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-13.png)
+![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-13.png)
 
 **构建命令周期:**
 
@@ -554,7 +554,7 @@ pom声明：
 
     Maven 继承是指在 Maven 的项目中，让一个项目从另一个项目中**继承配置信息**的机制。继承可以让我们在多个项目中共享同一配置信息，简化项目的管理和维护工作。
 
-    <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-14.png" style="zoom: 50%;" />
+    <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-14.png" style="zoom: 50%;" />
 2. 继承作用
 
     作用：在父工程中统一管理项目中的依赖信息,进行统一版本管理!
@@ -694,13 +694,13 @@ pom声明：
 
     通过触发父工程构建命令、引发所有子模块构建！产生反应堆！
 
-    ![](https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-15.png)
+    ![](https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-15.png)
 
 ## 五、Maven案例：搭建微服务Maven工程架构
 
 ### 5.1 项目需求和结构分析
 
-<img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-16.png" style="zoom:50%;" />
+<img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-16.png" style="zoom:50%;" />
 
 需求案例：搭建一个电商平台项目，该平台包括用户服务、订单服务、通用工具模块等。
 
@@ -731,7 +731,7 @@ pom声明：
    
     1. 创建父工程
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-17.png" style="zoom:39%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-17.png" style="zoom:39%;" />
     2. pom.xml配置
     
     ```XML
@@ -813,9 +813,9 @@ pom声明：
    
     1. 创建模块
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-18.png" style="zoom: 100%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-18.png" style="zoom: 100%;" />
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-19.png" style="zoom: 80%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-19.png" style="zoom: 80%;" />
     2. pom.xml配置
     
     ```XML
@@ -853,9 +853,9 @@ pom声明：
    
     1. 创建模块
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-20.png" style="zoom:80%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-20.png" style="zoom:80%;" />
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-21.png" style="zoom: 80%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-21.png" style="zoom: 80%;" />
     2. pom.xml配置
 
     ```XML
@@ -897,9 +897,9 @@ pom声明：
    
     1. 创建模块
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-22.png" style="zoom:80%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-22.png" style="zoom:80%;" />
     
-        <img src="https://raw.githubusercontent.com/Yukinoshita52/images/main/imgs/mavenimage-23.png" style="zoom:80%;" />
+        <img src="https://raw.gitmirror.com/Yukinoshita52/images/main/imgs/mavenimage-23.png" style="zoom:80%;" />
     2. pom.xml
 
     ```XML
